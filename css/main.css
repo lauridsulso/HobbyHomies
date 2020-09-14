@@ -117,7 +117,7 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
 /* animation til loading-side */
 
 #gul-baggrund {
-  background: url("../images/baggrund.png") no-repeat center center fixed;
+  background: url("../img/baggrund.png") no-repeat center center fixed;
   height: 100%;
   background-size: cover;
 }
