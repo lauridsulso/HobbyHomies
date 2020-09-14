@@ -48,14 +48,14 @@ h1 {
 /* ---------- tabbar styling ---------- */
 .tabbar {
 
-/*GUL GRADIENT
+  /*GUL GRADIENT
 
 background: rgb(255,220,107);
 background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 100%);
 
 */
 
-background: lightgray;
+  background: lightgray;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -111,5 +111,79 @@ background: lightgray;
 
   to {
     opacity: 1
+  }
+}
+
+/* animation til loading-side */
+
+#gul-baggrund {
+  background: url("../images/baggrund.png") no-repeat center center fixed;
+  height: 100%;
+  background-size: cover;
+}
+
+#logo-animation {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70%;
+  animation: rotate-logo 25s infinite both;
+}
+
+.velkomst-overskrift {
+  text-align: center;
+  color: white;
+  font-size: 2.1em;
+}
+
+
+@keyframes rotate-logo {
+  0% {
+    transform: rotate(180deg);
+  }
+
+  10% {
+    transform: rotate(-180deg);
+  }
+
+  20% {
+    transform: rotate(180deg);
+  }
+
+  30% {
+    transform: rotate(-180deg);
+  }
+
+  40% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(-180deg);
+  }
+
+  60% {
+    transform: rotate(180deg);
+  }
+
+  70% {
+    transform: rotate(-180deg);
+  }
+
+  80% {
+    transform: rotate(180deg);
+  }
+
+  90% {
+    transform: rotate(-180deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+
+  110% {
+    transform: rotate(180deg);
   }
 }
