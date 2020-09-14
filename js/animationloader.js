@@ -1,6 +1,8 @@
+"use strict";
+
 function onReady(callback) {
     var intervalId = window.setInterval(function () {
-        if (document.getElementsByTagName('home')[0] !== undefined) {
+        if (document.getElementById('#home')[0] !== undefined) {
             window.clearInterval(intervalId);
             callback.call(this);
         }
@@ -12,6 +14,6 @@ function setVisible(selector, visible) {
 }
 
 onReady(function () {
-    setVisible('page', true);
+    setVisible('.page', true);
     setVisible('#loading', false);
 });
