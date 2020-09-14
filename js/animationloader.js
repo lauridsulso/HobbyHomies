@@ -1,13 +1,17 @@
-export default class Loader {
-    constructor() {
-        this.loader = document.getElementById('loader');
-    }
-
-    show(show) {
-        if (show) {
-            this.loader.classList.remove("hide");
-        } else {
-            this.loader.classList.add("hide");
+function onReady(callback) {
+    var intervalId = window.setInterval(function () {
+        if (document.getElementsByTagName('home')[0] !== undefined) {
+            window.clearInterval(intervalId);
+            callback.call(this);
         }
-    }
+    }, 1000);
 }
+
+function setVisible(selector, visible) {
+    document.querySelector(selector).style.display = visible ? 'block' : 'none';
+}
+
+onReady(function () {
+    setVisible('page', true);
+    setVisible('#loading', false);
+});

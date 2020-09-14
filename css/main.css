@@ -116,11 +116,13 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
 
 /* animation til loading-side */
 
-#gul-baggrund {
-  background: url("../img/baggrund.png") no-repeat center center fixed;
-  height: 100%;
-  background-size: cover;
+#loading {
+  background: rgb(255, 220, 107);
+  background: linear-gradient(0deg, rgba(255, 220, 107, 1) 7%, rgba(255, 184, 40, 1) 39%);
+
+
 }
+
 
 #logo-animation {
   width: 40%;
