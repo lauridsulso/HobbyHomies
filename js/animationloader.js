@@ -1,6 +1,6 @@
 "use strict";
 
-export default class Loader {
+class Loader {
     constructor() {
         this.loader = document.getElementById('loader');
     }
@@ -16,3 +16,6 @@ export default class Loader {
         }
     }
 }
+
+const loader = new Loader().show(false)
+console.log(loader)
