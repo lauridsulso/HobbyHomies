@@ -29,8 +29,7 @@ h1 {
 
 /* ---------- topbar styling ---------- */
 .topbar {
-  background-color: var(--green);
-  color: var(--text-color-light);
+  color: white;
   padding: 13.5px;
   text-transform: uppercase;
   position: fixed;
@@ -102,7 +101,7 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
   max-width: 300px;
 }
 
-/* ---------- animations ---------- */
+/* ---------- ANIMATION ---------- */
 /* animation til loading-side */
 
 #loader {
@@ -113,6 +112,7 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
   left: 0;
   bottom: 0;
   right: 0;
+  animation: bagggrund-fade 3.7s;
 }
 
 .hide {
@@ -124,13 +124,15 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
   margin-left: auto;
   margin-right: auto;
   margin-top: 70%;
-  animation: rotate-logo 25s infinite both;
+  animation: rotate-logo 3.5s infinite both;
 }
 
 .velkomst-overskrift {
   text-align: center;
   color: white;
   font-size: 2.1em;
+  animation: hide 3.5s;
+  font-weight: bold;
 }
 
 
@@ -139,39 +141,15 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
     transform: rotate(180deg);
   }
 
-  10% {
+  25% {
     transform: rotate(-180deg);
-  }
-
-  20% {
-    transform: rotate(180deg);
-  }
-
-  30% {
-    transform: rotate(-180deg);
-  }
-
-  40% {
-    transform: rotate(180deg);
   }
 
   50% {
-    transform: rotate(-180deg);
-  }
-
-  60% {
     transform: rotate(180deg);
   }
 
-  70% {
-    transform: rotate(-180deg);
-  }
-
-  80% {
-    transform: rotate(180deg);
-  }
-
-  90% {
+  75% {
     transform: rotate(-180deg);
   }
 
@@ -179,7 +157,45 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
     transform: rotate(180deg);
   }
 
-  110% {
-    transform: rotate(180deg);
+  99% {
+    opacity: 0;
   }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes baggrund-fade {
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ---------- home page ---------- */
+
+img.orange {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home_h2  {
+  position: relative;
+  z-index: 1;
 }
