@@ -1,5 +1,5 @@
 "use strict";
-/*
+
 let _categories = [];
 
 
@@ -12,10 +12,10 @@ async function getCategories() {
 }
 
 getCategories()
-*/
+
 
 // append movies to the DOM
-/*
+
 function appendCategories(categories) {
   // TODO: append movies to #movies-container
   let template = "";
@@ -29,8 +29,8 @@ function appendCategories(categories) {
       `;
   }
 
-console.log(template);
-document.querySelector("#select-category").innerHTML = template;
+  console.log(template);
+  document.querySelector("#select-category").innerHTML = template;
 
 }
 
@@ -41,7 +41,7 @@ function hashTabbar(id) {
     "loader", "login", "signin"
   ];
 
-  for(const navn of array) {
+  for (const navn of array) {
     if (navn === id) {
       return true
     }
