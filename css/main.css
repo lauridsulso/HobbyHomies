@@ -29,8 +29,7 @@ h1 {
 
 /* ---------- topbar styling ---------- */
 .topbar {
-  background-color: var(--green);
-  color: var(--text-color-light);
+  color: white;
   padding: 13.5px;
   text-transform: uppercase;
   position: fixed;
@@ -102,7 +101,7 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
   max-width: 300px;
 }
 
-/* ---------- animations ---------- */
+/* ---------- ANIMATION ---------- */
 /* animation til loading-side */
 
 #loader {
@@ -185,4 +184,18 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
   100% {
     opacity: 1;
   }
+}
+
+/* ---------- home page ---------- */
+
+img.orange {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home_h2  {
+  position: relative;
+  z-index: 1;
 }
