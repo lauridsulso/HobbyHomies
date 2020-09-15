@@ -12,7 +12,7 @@ class Loader {
             setTimeout(() => {
                 this.loader.classList.add("hide");
 
-            }, 3400)
+            }, ) //husk 3400 her 
         }
     }
 }

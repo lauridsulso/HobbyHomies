@@ -133,6 +133,7 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
   color: white;
   font-size: 2.1em;
   animation: hide 3.5s;
+  font-weight: bold;
 }
 
 
