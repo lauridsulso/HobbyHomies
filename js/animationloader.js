@@ -1,19 +1,18 @@
 "use strict";
 
-function onReady(callback) {
-    var intervalId = window.setInterval(function () {
-        if (document.getElementById('#home')[0] !== undefined) {
-            window.clearInterval(intervalId);
-            callback.call(this);
+export default class Loader {
+    constructor() {
+        this.loader = document.getElementById('loader');
+    }
+
+    show(show) {
+        if (show) {
+            this.loader.classList.remove("hide");
+        } else {
+            setTimeout(() => {
+                this.loader.classList.add("hide");
+
+            }, 3000)
         }
-    }, 1000);
+    }
 }
-
-function setVisible(selector, visible) {
-    document.querySelector(selector).style.display = visible ? 'block' : 'none';
-}
-
-onReady(function () {
-    setVisible('.page', true);
-    setVisible('#loading', false);
-});
