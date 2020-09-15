@@ -31,7 +31,6 @@ h1 {
 .topbar {
   color: white;
   padding: 13.5px;
-  text-transform: uppercase;
   position: fixed;
   top: 0;
   left: 0;
@@ -91,7 +90,7 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
   background: var(--light-grey);
   animation: fadeIn 0.6s;
   /* padding equals height of tabbar and topbar */
-  padding: 55px 0;
+  padding: 0;
 }
 
 /* ---------- logo styling ---------- */
@@ -195,7 +194,46 @@ img.orange {
   left: 0;
 }
 
-.home_h2  {
+.home_h2 {
   position: relative;
   z-index: 1;
+}
+
+
+/* ---------- home page ---------- */
+.orange-h2 {
+  color: #FFB828;
+}
+
+.topbar-til-gul-overskrift {
+  background-color: white;
+  box-shadow: 0px 4px 16px -5px rgba(0, 0, 0, 0.19);
+  top: 0;
+  right: 0;
+  left: 0;
+
+}
+
+.flex-items-gul-overskrift {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.flex-items-gul-overskrift>div {}
+
+.gul-pil-tilbage {
+  width: 10px;
+  float: left;
+  padding-top: 20px;
+  padding-left: 20px;
+
+
+}
+
+.gul-search {
+  width: 20px;
+  float: right;
+  padding-top: 20px;
+  padding-right: 20px;
 }
