@@ -12,7 +12,7 @@ class Loader {
             setTimeout(() => {
                 this.loader.classList.add("hide");
 
-            }, 3000)
+            }, 3400)
         }
     }
 }
