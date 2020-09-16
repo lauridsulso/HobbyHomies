@@ -5,6 +5,7 @@
   --light-grey: #f1f1f4;
   --text-color-light: #f1f1f1;
   --text-color-dark: #333;
+  --orange: #FFB828;
 }
 
 /* ---------- general styling ---------- */
@@ -30,11 +31,11 @@ h1 {
 .topbar {
   color: white;
   padding: 13.5px;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+ 
 }
 
 .topbar h2 {
@@ -201,6 +202,115 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 }
 
 
+/*KOPIER HER FRA---------------------------------------------------------------------------------------------------*/
+
+#profilflex{
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+
+/*TOP IKON TIL HØJRE*/
+
+.blyant{
+  width: 20%;
+  float: right;
+}
+/*TOP IKON TIL VENSTRE (TILBAGE)*/
+
+.tilbagepil{
+  width: 10%;
+  float: left;
+}
+
+img.orangeabsolute {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;}
+
+
+  /*Profilbillede af Jacob*/
+.jacobprofilbillede{
+  width: 150px;
+  position: absolute;
+  top: 200px;
+  left: 33%;
+  z-index: 999999;
+  
+
+}
+
+#firstandlastnameflex{
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+  margin-top: 35%;
+  
+
+}
+#jacobschytzflex{
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  
+
+}
+
+/*Info tekst */
+.profiletext{
+text-align: left;
+margin: 0;
+margin-left: 6%;
+}
+
+/*Stregerne på siden (HR)*/
+.hrprofile{margin-bottom: 5%;
+  height: 0.3px;
+  
+width: 87%;}
+
+
+/*Overskrift (name, location, occupation)*/
+.profileh5{
+  color: grey;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/*Info (Jacob, Aarhus, student*/
+.profileh4{color: black;
+margin: 0;
+margin-bottom: 5px;}
+
+
+/*Knappen på profile*/
+#profile > button {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: transform .2s; /* Animation */
+  z-index: 999999;
+  font-weight: 600;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+button:active {
+  transform: scale(0.9); 
+}
+
+/*KOPIER HER NED TIL-----------------------------------------------------------------------*/
+
+
+
 @keyframes rotate-logo {
   0% {
     transform: rotate(180deg);
@@ -251,7 +361,19 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   }
 }
 
-/* ---------- home page ---------- */
+
+/*----------- login forside--------------*/
+h1.find-your-new, h1.hobby-homies {
+  color: var(--orange);
+}
+
+h1.hobby-homies {
+  font-size: 35px;
+}
+
+h1.find-your-new {
+  font-size: 30px;
+}
 
 img.orange {
   z-index: -1;
@@ -260,102 +382,106 @@ img.orange {
   left: 0;
 }
 
-.home_h2 {
+.container {
+  position: relative;
+  background-color: white;
+  margin:12%;
+  margin-top:220px;
+  z-index: 1;
+  padding-top:15%;
+  padding-bottom:25%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: transform .2s; /* Animation */
+}
+
+button:active {
+  transform: scale(0.9); 
+}
+
+.google {
+  background-color: var(--blue);
+}
+
+
+
+/* ---------- home page ---------- */
+
+.orange {
+  width: 100%;
+  
+}
+
+.home_h2  {
   position: relative;
   z-index: 1;
+  color: white;;
 }
 
-
-/* KOPIER HER MAJA */
-
-/* ---------- fjerner styling på knap ---------- */
-button {
+.search {
+  color: #939393;
+  width: 300px;
+  padding: 14px;
   border: none;
-  background: transparent;
+  margin-top:25px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-/* ---------- styling til gul overskrift ---------- */
-.orange-h2 {
-  color: #FFB828;
+#input_container {
+    position:relative;
 }
 
-.topbar-til-gul-overskrift {
+#input_img {
+    position:absolute;
+    bottom:13%;
+    left:80%;
+    width:24px;
+}
+
+.hvid_boks {
   background-color: white;
-  box-shadow: 0px 4px 16px -5px rgba(0, 0, 0, 0.19);
-  top: 0;
-  right: 0;
-  left: 0;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   border: none;
+   position: relative;
+   margin:10%;
+   z-index: 1;
+   border-radius: 4px;
+   
+}
+
+
+
+.floorball_img {
+  border-end-end-radius: 4px;
+  margin-bottom: -5px;
+
+}
+
+.meetup_info {
+  color: #939393;
+  text-align: left;
+  padding: 7px;
+  font-size:0.8em;
+}
+
+h2.floorball {
+  color: #FFB828;
+  padding: 7px;
+}
+
+.kryds {
   position: sticky;
-
+  left:80%;
+  top:80%;
+  z-index:2 ;
 }
-
-.flex-items-gul-overskrift {
-  display: flex;
-  justify-content: space-between;
-}
-
-
-.gul-pil-tilbage {
-  width: 15px;
-  float: left;
-  padding-top: 22px;
-  padding-left: 20px;
-}
-
-.gul-search {
-  width: 25px;
-  float: right;
-  padding-top: 22px;
-  padding-right: 20px;
-}
-
-/* ---------- find homies ---------- */
-
-.find-homies-profiler {
-  background: linear-gradient(90deg, rgba(255, 184, 40, 1) 55%, rgba(255, 220, 107, 1) 87%);
-  box-shadow: 0px 4px 16px -5px rgba(0, 0, 0, 0.19);
-  margin-right: 18px;
-  margin-left: 18px;
-  margin-top: 2.5em;
-}
-
-.find-homies-profiler>p {
-  color: white;
-  margin-left: 25px;
-  padding-top: 1em;
-}
-
-.navn-og-alder {
-  font-size: 1.7em;
-}
-
-.profil-billede {
-  width: 27%;
-  float: right;
-  margin-top: 40px;
-  margin-right: 25px;
-}
-
-.lokations-pointer {
-  width: 12px;
-  padding-top: 10px;
-}
-
-.homies-lokation-tekst {
-  font-size: 1em;
-  padding-top: 4px;
-}
-
-.hobbies-undertitel {
-  font-size: 1.2em;
-}
-
-.homies-profiler-broedtekst {
-  font-weight: lighter;
-  font-size: 1em;
-  padding-top: 4px;
-
-}
-
-/* SLUTTER HER MAJA*/

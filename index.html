@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Find Homies who share your interests">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
 
@@ -200,21 +201,76 @@
 
 
   <!-- loading page -->
-  <section id="loader">
+  <section id="loader" class="page">
     <img src="img/logo.png" alt="logo" id="logo-animation"><br>
     <h1 class="velkomst-overskrift">Hobby Homies</h1>
   </section>
+
+
 
   <!-- pick your interests page -->
   <section id="select-category">
   </section>
 
+  <!------login page------>
+  <section id="login" class="page">
+    <img class="orange" src="img/baggrund1.png" alt="orange color" width="100%">
+    <div class="container">
+      <h1 class="find-your-new">Find your new</h>
+        <h1 class="hobby-homies">Hobby Homies</h1>
+        <button type="button" name="button" onclick="">Sign up</button>
+        <button type="button" name="button" onclick="">Log in</button><br><br>
+
+
+        <button class="google" type="button" name="button" onclick="">Connect with google</button>
+    </div>
+
+  </section>
+
   <!-- home page -->
+
   <section id="home" class="page">
+    <img class="orange" src="img/baggrund1.png" alt="" width="100%">
     <header class="topbar">
       <h2 class="home_h2">Home</h2>
-      <img class="orange" src="img/baggrund1.png" width="100%">
+
+      <div id="input_container">
+        <input class="search" type="search" placeholder="Search for meetups">
+        <img src="img/search-yellow.png" width="20%" id="input_img">
+      </div>
     </header>
+
+    <img class="kryds" src="img/kryds.svg" width="17%">
+
+    <div class="hvid_boks">
+      <h2 class="floorball">Floorball</h2>
+      <p class="meetup_info"><img src="img/clock (1).svg" width="5%"> 28 januar 2021 at 20:45 <br><br><img
+          src="img/pin (1).svg" width="4%"> Nørre Allè
+        84, 8000 Aarhus C</p>
+
+      <img src="..." width="">
+      <img src="..." width="">
+      <img src="..." width="">
+
+      <img class="floorball_img" src="img/floorball.jpg" width="100%">
+    </div>
+
+
+
+    <div class="hvid_boks">
+      <h2 class="floorball">Football</h2>
+      <p class="meetup_info"><img src="img/clock (1).svg" width="5%"> 9 december 2020 at 17:00 <br><br><img
+          src="img/pin (1).svg" width="4%"> Ringvej Syd 56, 8260 Viby J</p>
+
+      <img src="..." width="">
+      <img src="..." width="">
+      <img src="..." width="">
+
+      <img class="floorball_img" src="img/fodbold.jpg" width="100%">
+    </div>
+
+
+
 
   </section>
 
@@ -300,14 +356,87 @@
 
   </section>
 
-  <!-- profile page -->
+  <!-- profile page - KOPIER HER FRA ------------------------------------------------------------------------------- -->
   <section id="profile" class="page">
     <header class="topbar">
-      <h2>Profile</h2>
+      <!-- top ikoner + overskrift i flexbox -->
+      <div id="profilflex">
+        <div>
+          <img class="tilbagepil" src="/img/arrow-white.png" alt="">
+        </div>
+        <div>
+          <h2 class="home_h2">Profile</h2>
+        </div>
+        <div>
+          <img class="blyant" src="/img/editprofile.png" alt="">
+        </div>
+
+
+      </div>
+
+
+
     </header>
+
+    <img class="orangeabsolute" src="img/baggrund1.png" width="100%">
+
+    <!-- Jacobs profilbillede -->
+
+    <img class="jacobprofilbillede" src="/img/jacob.png" alt="">
+    <br><br><br><br><br><br><br><br>
+
+    <!-- first/last name -->
+    <div id="firstandlastnameflex">
+
+
+    </div>
+
+    <!-- jacob/schytz -->
+
+    <div class="profiletext">
+      <h5 class="profileh5">Name</h5>
+      <h4 class="profileh4">Jacob Schytz</h4>
+    </div>
+    <hr class="hrprofile">
+
+    <!-- Info om profilen - lokation, beskæftigelse osv. -->
+
+    <div class="profiletext">
+      <h5 class="profileh5">Location</h5>
+      <h4 class="profileh4">Aarhus, Denmark</h4>
+
+    </div>
+    <hr class="hrprofile">
+
+
+    <div class="profiletext">
+      <h5 class="profileh5">Language</h5>
+      <h4 class="profileh4">Danish, English</h4>
+    </div>
+    <hr class="hrprofile">
+
+
+
+    <div class="profiletext">
+      <h5 class="profileh5">Occupation</h5>
+      <h4 class="profileh4">Student</h4>
+
+    </div>
+    <hr class="hrprofile">
+
+    <div class="profiletext">
+      <h5 class="profileh5">Hobbies</h5>
+      <h4 class="profileh4">Hockey, Football, Beer...</h4>
+
+    </div>
+    <hr class="hrprofile">
+    <!-- Your meetups knap -->
+
+    <button>Your Meetups</button>
 
   </section>
 
+  <!-- profile page - KOPIER HER NED TIL ------------------------------------------------------------------------------- -->
 
 
   <!-- SPA functionality  -->
