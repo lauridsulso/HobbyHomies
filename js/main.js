@@ -35,3 +35,13 @@ function hideTabbar(hide) {
         tabbar.classList.remove("hide");
     }
 }
+
+
+// KOPIER HER MAJA 
+//gå til forrige side funktion
+
+function goBack() {
+    window.history.back();
+}
+
+//SLUTTER HER MAJA
