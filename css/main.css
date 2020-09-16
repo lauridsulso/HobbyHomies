@@ -5,6 +5,7 @@
   --light-grey: #f1f1f4;
   --text-color-light: #f1f1f1;
   --text-color-dark: #333;
+  --orange: #FFB828;
 }
 
 /* ---------- general styling ---------- */
@@ -12,7 +13,6 @@ html {
   color: var(--text-color-dark);
   font-family: 'Montserrat', sans-serif;
   height: 100%;
-  text-align: center;
   width: 100%;
   font-weight: 600;
 }
@@ -52,8 +52,7 @@ background: rgb(255,220,107);
 background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 100%);
 
 */
-
-  background: lightgray;
+  background: white;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -66,21 +65,23 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
   display: inline-block;
   color: var(--text-color-dark);
   text-align: center;
-  padding: 20px 16px;
+  padding: 20px 20px;
   text-decoration: none;
   font-size: 0.8em;
   font-weight: 800;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
 }
 
-
+.cirkel-test {
+  fill: #FFB828;
+}
 
 /* Add a color to the active/current link */
 .tabbar a.active {
-  background-color: var(--light-green);
-  color: var(--text-color-light);
+  color: #FFB828;
 }
+
+
 
 /* ---------- page styling ---------- */
 .page {
@@ -90,7 +91,7 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
   background: var(--light-grey);
   animation: fadeIn 0.6s;
   /* padding equals height of tabbar and topbar */
-  padding: 55px 0;
+  padding: 0;
 }
 
 /* ---------- logo styling ---------- */
@@ -133,6 +134,115 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
   animation: hide 3.5s;
   font-weight: bold;
 }
+
+
+/*KOPIER HER FRA---------------------------------------------------------------------------------------------------*/
+
+#profilflex{
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+
+/*TOP IKON TIL HØJRE*/
+
+.blyant{
+  width: 20%;
+  float: right;
+}
+/*TOP IKON TIL VENSTRE (TILBAGE)*/
+
+.tilbagepil{
+  width: 10%;
+  float: left;
+}
+
+img.orangeabsolute {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;}
+
+
+  /*Profilbillede af Jacob*/
+.jacobprofilbillede{
+  width: 150px;
+  position: absolute;
+  top: 200px;
+  left: 33%;
+  z-index: 999999;
+  
+
+}
+
+#firstandlastnameflex{
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+  margin-top: 35%;
+  
+
+}
+#jacobschytzflex{
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  
+
+}
+
+/*Info tekst */
+.profiletext{
+text-align: left;
+margin: 0;
+margin-left: 6%;
+}
+
+/*Stregerne på siden (HR)*/
+.hrprofile{margin-bottom: 5%;
+  height: 0.3px;
+  
+width: 87%;}
+
+
+/*Overskrift (name, location, occupation)*/
+.profileh5{
+  color: grey;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/*Info (Jacob, Aarhus, student*/
+.profileh4{color: black;
+margin: 0;
+margin-bottom: 5px;}
+
+
+/*Knappen på profile*/
+#profile > button {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: transform .2s; /* Animation */
+  z-index: 999999;
+  font-weight: 600;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+button:active {
+  transform: scale(0.9); 
+}
+
+/*KOPIER HER NED TIL-----------------------------------------------------------------------*/
+
 
 
 @keyframes rotate-logo {

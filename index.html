@@ -20,12 +20,18 @@
 <body onhashchange="pageChange()">
   <!-- tabbar navigation -->
   <nav class="tabbar">
-    <a href="#home">Home</a>
-    <a href="#findhomies">Find Homies</a>
-    <a href="#chat">Chat</a>
+    <a href="#home"> <svg class="cirkel-test" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.94 52.94">
+        <circle class="a" cx="26.47" cy="26.47" r="26.47" />
+      </svg>Home</a>
+    <a href="#findhomies"> <svg class="cirkel-test" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.94 52.94">
+        <circle class="a" cx="26.47" cy="26.47" r="26.47" />
+      </svg>Find Homies</a>
+    <a href="#chat"> <svg class="cirkel-test" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.94 52.94">
+        <circle class="a" cx="26.47" cy="26.47" r="26.47" />
+      </svg>Chat</a>
     <a href="#profile">Profile</a>
-
   </nav>
+
 
   <!-- loading page -->
   <section id="loader" class="page">
@@ -101,14 +107,77 @@
 
   </section>
 
+  <!-- KOPIER HER MAJA -->
 
   <!-- find homies page -->
+  <!-- header -->
   <section id="findhomies" class="page">
-    <header class="topbar">
-      <h2>Find Homies</h2>
+    <header class="topbar-til-gul-overskrift">
+      <div class="flex-items-gul-overskrift">
+        <div><button onclick="goBack()"><img src="img/arrow-yellow.png" alt="tilbage" class="gul-pil-tilbage"></button>
+        </div>
+        <div>
+          <h2 class="orange-h2">Find Homies</h2>
+        </div>
+        <div><img src="img/search-yellow.png" alt="søg" class="gul-search"></div>
+      </div>
     </header>
 
+    <!-- find homies profiler -->
+    <div class="find-homies-profiler">
+      <img src="img/maja-rund.png" alt="maja-profilbillede" class="profil-billede">
+      <p><span class="navn-og-alder">Maja, 20</span><br>
+        <img src="img/lokation-hvid.png" alt="lokation" class="lokations-pointer"> <span
+          class="homies-lokation-tekst">Viby<br></span>
+        <br>
+        <span class="hobbies-undertitel">Hobbies</span><br>
+        <span class="homies-profiler-broedtekst">Hockey, basketball, <br> patchwork</span>
+      </p>
+      <br>
+    </div>
+
+    <div class="find-homies-profiler">
+      <img src="img/tine-rund.png" alt="tine-profilbillede" class="profil-billede">
+      <p><span class="navn-og-alder">Tine, 23</span><br>
+        <img src="img/lokation-hvid.png" alt="lokation" class="lokations-pointer"> <span
+          class="homies-lokation-tekst">Hadsten<br></span>
+        <br>
+        <span class="hobbies-undertitel">Hobbies</span><br>
+        <span class="homies-profiler-broedtekst">Ballet, airhockey, pool, <br> ring ridning</span>
+      </p>
+      <br>
+    </div>
+
+    <div class="find-homies-profiler">
+      <img src="img/laurids-rund.png" alt="laurids-profilbillede" class="profil-billede">
+      <p><span class="navn-og-alder">Laurids, 23</span><br>
+        <img src="img/lokation-hvid.png" alt="lokation" class="lokations-pointer"> <span
+          class="homies-lokation-tekst">Hadsten<br></span>
+        <br>
+        <span class="hobbies-undertitel">Hobbies</span><br>
+        <span class="homies-profiler-broedtekst">Knitting, curling, <br> iceskating</span>
+      </p>
+      <br>
+    </div>
+
+    <div class="find-homies-profiler">
+      <img src="img/pernille-rund.png" alt="pernille-profilbillede" class="profil-billede">
+      <p><span class="navn-og-alder">Pernille, 27</span><br>
+        <img src="img/lokation-hvid.png" alt="lokation" class="lokations-pointer"> <span
+          class="homies-lokation-tekst">Viby<br></span>
+        <br>
+        <span class="hobbies-undertitel">Hobbies</span><br>
+        <span class="homies-profiler-broedtekst">Handball, football, <br> airhockey</span>
+      </p>
+      <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
   </section>
+
+  <!-- SLUTTER HER MAJA -->
 
   <!-- chat page -->
   <section id="chat" class="page">
@@ -116,16 +185,91 @@
       <h2>Chat</h2>
     </header>
 
+
+
   </section>
 
-  <!-- profile page -->
+  <!-- profile page - KOPIER HER FRA ------------------------------------------------------------------------------- -->
   <section id="profile" class="page">
     <header class="topbar">
-      <h2>Profile</h2>
+      <!-- top ikoner + overskrift i flexbox -->
+      <div id="profilflex">
+        <div>
+          <img class="tilbagepil" src="/img/arrow-white.png" alt="">
+        </div>
+        <div>
+          <h2 class="home_h2">Profile</h2>
+        </div>
+        <div>
+          <img class="blyant" src="/img/editprofile.png" alt="">
+        </div>
+
+
+      </div>
+
+
+
     </header>
+
+    <img class="orangeabsolute" src="img/baggrund1.png" width="100%">
+
+    <!-- Jacobs profilbillede -->
+
+    <img class="jacobprofilbillede" src="/img/jacob.png" alt="">
+    <br><br><br><br><br><br><br><br>
+
+    <!-- first/last name -->
+    <div id="firstandlastnameflex">
+
+
+    </div>
+
+    <!-- jacob/schytz -->
+
+    <div class="profiletext">
+      <h5 class="profileh5">Name</h5>
+      <h4 class="profileh4">Jacob Schytz</h4>
+    </div>
+    <hr class="hrprofile">
+
+    <!-- Info om profilen - lokation, beskæftigelse osv. -->
+
+    <div class="profiletext">
+      <h5 class="profileh5">Location</h5>
+      <h4 class="profileh4">Aarhus, Denmark</h4>
+
+    </div>
+    <hr class="hrprofile">
+
+
+    <div class="profiletext">
+      <h5 class="profileh5">Language</h5>
+      <h4 class="profileh4">Danish, English</h4>
+    </div>
+    <hr class="hrprofile">
+
+
+
+    <div class="profiletext">
+      <h5 class="profileh5">Occupation</h5>
+      <h4 class="profileh4">Student</h4>
+
+    </div>
+    <hr class="hrprofile">
+
+    <div class="profiletext">
+      <h5 class="profileh5">Hobbies</h5>
+      <h4 class="profileh4">Hockey, Football, Beer...</h4>
+
+    </div>
+    <hr class="hrprofile">
+    <!-- Your meetups knap -->
+
+    <button>Your Meetups</button>
 
   </section>
 
+  <!-- profile page - KOPIER HER NED TIL ------------------------------------------------------------------------------- -->
 
 
   <!-- SPA functionality  -->
