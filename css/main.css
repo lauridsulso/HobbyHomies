@@ -31,12 +31,11 @@ h1 {
 .topbar {
   color: white;
   padding: 13.5px;
-  text-transform: uppercase;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+ 
 }
 
 .topbar h2 {
@@ -186,7 +185,19 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
   }
 }
 
-/* ---------- home page ---------- */
+
+/*----------- login forside--------------*/
+h1.find-your-new, h1.hobby-homies {
+  color: var(--orange);
+}
+
+h1.hobby-homies {
+  font-size: 35px;
+}
+
+h1.find-your-new {
+  font-size: 30px;
+}
 
 img.orange {
   z-index: -1;
@@ -195,7 +206,106 @@ img.orange {
   left: 0;
 }
 
+.container {
+  position: relative;
+  background-color: white;
+  margin:12%;
+  margin-top:220px;
+  z-index: 1;
+  padding-top:15%;
+  padding-bottom:25%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: transform .2s; /* Animation */
+}
+
+button:active {
+  transform: scale(0.9); 
+}
+
+.google {
+  background-color: var(--blue);
+}
+
+
+
+/* ---------- home page ---------- */
+
+.orange {
+  width: 100%;
+  
+}
+
 .home_h2  {
   position: relative;
   z-index: 1;
+  color: white;;
+}
+
+.search {
+  color: #939393;
+  width: 300px;
+  padding: 14px;
+  border: none;
+  margin-top:25px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#input_container {
+    position:relative;
+}
+
+#input_img {
+    position:absolute;
+    bottom:13%;
+    left:80%;
+    width:24px;
+}
+
+.hvid_boks {
+  background-color: white;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   border: none;
+   position: relative;
+   margin:10%;
+   z-index: 1;
+   border-radius: 4px;
+   
+}
+
+
+
+.floorball_img {
+  border-end-end-radius: 4px;
+  margin-bottom: -5px;
+
+}
+
+.meetup_info {
+  color: #939393;
+  text-align: left;
+  padding: 7px;
+  font-size:0.8em;
+}
+
+h2.floorball {
+  color: #FFB828;
+  padding: 7px;
+}
+
+.kryds {
+  position: sticky;
+  left:80%;
+  top:80%;
+  z-index:2 ;
 }
